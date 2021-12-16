@@ -49,6 +49,16 @@
             android:id="@+id/addBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Add" />
+            android:text="Add"
+            android:backgroundTint="#504E4E"/>
+
+        <Button
+            android:id="@+id/updateDeleteBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update / Delete"
+            android:backgroundTint="#504E4E"/>
+
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

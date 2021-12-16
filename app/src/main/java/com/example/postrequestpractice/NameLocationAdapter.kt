@@ -1,5 +1,6 @@
 package com.example.postrequestpractice
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -21,12 +22,14 @@ class NameLocationAdapter(private var namesLocations: NamesAndLocations):
         )
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: NameLocationViewHolder, position: Int) {
         val nameLocat = namesLocations[position]
 
         holder.binding.apply {
-            nameTV.text = nameLocat.name
-            locationTV.text = nameLocat.location
+            nameTV.text = "Name: ${nameLocat.name}"
+            locationTV.text = "Location: ${nameLocat.location}"
+            pkTV.text = "PK: ${nameLocat.pk}"
         }
     }
 
