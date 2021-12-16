@@ -13,7 +13,7 @@ interface APIInterface {
 // "userNameLocation" is the parameter that I want to pass (what will be posted in the server) and it's of type NamesAndLocationsItem
 
     //PUT replaces the full object (use PATCH to update individual fields)
-    @PUT("/test/{id}") // here we paas in the ID of the post we want to update
+    @PUT("test/{id}") // here we paas in the ID of the post we want to update
     fun updateNameLocation(@Path("id") id: Int, @Body userNameLocation: NamesAndLocationsItem): Call<NamesAndLocationsItem>
 
     @DELETE("test/{id}")
